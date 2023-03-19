@@ -83,13 +83,22 @@ export default {
                     .put("/api/v1/user/", formData)
                     .then(response => {
                         toast({
-                            message: 'Password updated!',
+                            message: 'Password updated! Please login again.',
                             type: 'is-success',
                             dismissible: true,
                             pauseOnHover: true,
                             duration: 2000,
                             position: 'bottom-right',
                         })
+
+                        axios.defaults.headers.common["Authorization"] = ""
+
+                        localStorage.removeItem("token")
+                        localStorage.removeItem("userid")
+
+                        this.$store.commit('removeToken')
+
+                        this.$router.push('/')
                     })
                     .catch(error => {
                         if (error.response) {
