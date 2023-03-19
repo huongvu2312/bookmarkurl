@@ -11,22 +11,23 @@ A web application to save your url bookmark.
 
 ### Deploying
 
-Start the source environment with:
+* Start the source environment with:
 
-`source [your_absolute_path]/environment_3_11_2/bin/activate`
+  `source [your_absolute_path]/environment_3_11_2/bin/activate`
 
-In the backend direction, run the command to start server:
+* In the backend direction, run the command to start server:
 
-`python3 manage.py runserve`
+  `python3 manage.py runserve`
 
-Open [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) to view the admin panel in the browser.
-Open [http://127.0.0.1:8000/api/v1/](http://127.0.0.1:8000/api/v1/) to view the DRF API in the browser.
+  Open [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) to view the admin panel in the browser.
+  
+  Open [http://127.0.0.1:8000/api/v1/](http://127.0.0.1:8000/api/v1/) to view the DRF API in the browser.
 
-In the frontend directory, run the command to start server:
+* In the frontend directory, run the command to start server:
 
-`npm run serve`
+  `npm run serve`
 
-Open [http://localhost:8080](http://localhost:8080) to view the web application in the browser.
+  Open [http://localhost:8080](http://localhost:8080) to view the web application in the browser.
 
 ## Build with
 * Django Framework
@@ -42,7 +43,7 @@ Open [http://localhost:8080](http://localhost:8080) to view the web application 
 
 ## Live demo
 
-![Bookmark URL GIF](https://media.giphy.com/media/Vc55FMKMJIzMVrGl5f/giphy.gif)
+![Bookmark URL GIF](https://gifyu.com/image/SIL1I)
 
 ## License
 
