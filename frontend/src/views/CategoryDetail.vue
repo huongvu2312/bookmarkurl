@@ -12,7 +12,7 @@
                     <router-link :to="{ path: '/bookmark/new', query: { to: $route.params.category_slug } }"
                         class="button bg-theme1">Add new bookmark</router-link>
                 </div>
-                <div class="level-item">
+                <div class="level-item" v-if="$route.params.category_slug != 'no-category'">
                     <button @click="deleteCategory()" class="button is-danger">Delete this category</button>
                 </div>
             </div>

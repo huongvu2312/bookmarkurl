@@ -35,7 +35,6 @@ class MyAccount(APIView):
                         return Response({"status": "success", "data": "Update password!"})
                     except ValidationError as error:
                         return Response(error, status=status.HTTP_400_BAD_REQUEST)
-
                 else:
                     return Response({"data": "The old password is incorrect!"}, status=status.HTTP_401_UNAUTHORIZED)
             else:

@@ -141,7 +141,9 @@ export default {
                             duration: 2000,
                             position: 'bottom-right',
                         })
-                        const toPath = '/category/' + this.$route.query.to || '/bookmark'
+
+                        let toPath = '/bookmark'
+                        if (this.$route.query.to) toPath = '/category/' + this.$route.query.to
                         this.$router.push(toPath)
                     })
                     .catch(error => {
