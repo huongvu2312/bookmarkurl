@@ -43,7 +43,7 @@ A web application to save your url bookmark.
 
 ## Live demo
 
-![Bookmark URL GIF](https://s2.gifyu.com/images/Screen-Recording-2023-03-19-at-2.gif)
+[Bookmark URL GIF](https://s2.gifyu.com/images/Screen-Recording-2023-03-19-at-2.gif)
 
 ## License
 
