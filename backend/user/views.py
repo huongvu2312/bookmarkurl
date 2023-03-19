@@ -36,7 +36,7 @@ class MyAccount(APIView):
                     except ValidationError as error:
                         return Response(error, status=status.HTTP_400_BAD_REQUEST)
                 else:
-                    return Response({"data": "The old password is incorrect!"}, status=status.HTTP_401_UNAUTHORIZED)
+                    return Response({"The old password is incorrect!"}, status=status.HTTP_401_UNAUTHORIZED)
             else:
                 serializer = UserSerializer(
                     user, data=request.data, partial=True)

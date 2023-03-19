@@ -93,7 +93,7 @@ export default {
                     })
                     .catch(error => {
                         if (error.response) {
-                            if (error.response.data.length > 1) {
+                            if (error.response.data.length) {
                                 for (const property of error.response.data) {
                                     this.errors.push(property)
                                 }
